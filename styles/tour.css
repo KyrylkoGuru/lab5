@@ -1,0 +1,161 @@
+/* === Загальні стилі === */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5fdf5;
+    color: #333;
+  }
+  
+  h2 {
+    text-align: center;
+    font-family: 'Harlow Solid Italic', cursive;
+    font-size: 32px;
+    margin: 40px 0 20px;
+    color: #2e6f3e;
+  }
+  
+  /* === Хедер === */
+  header {
+    background-color: #3a7f49;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .logo-title .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* === Секції екскурсій === */
+  .tour-block {
+    display: flex;
+    max-width: 1100px;
+    margin: 40px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+  }
+  
+  .tour-block img {
+    width: 300px;
+    object-fit: cover;
+    height: auto;
+  }
+  
+  .tour-content {
+    padding: 30px 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .tour-content h3 {
+    font-family: 'Harlow Solid Italic', cursive;
+    font-size: 26px;
+    margin: 0 0 15px;
+  }
+  
+  .tour-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  
+  /* === Кнопка запису === */
+  .tour-content button {
+    background-color: #66b77d;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+    font-weight: bold;
+  }
+  
+  .tour-content button:hover {
+    background-color: #2e6f3e;
+  }
+  
+  /* === Індивідуальні кольори === */
+  .tour-emperor {
+    background-color: #ffe6e6; /* світло-червоний */
+  }
+  
+  .tour-emperor h3 {
+    color: #b60000;
+  }
+  
+  .tour-love {
+    background-color: #ffeaf4; /* світло-рожевий */
+  }
+  
+  .tour-love h3 {
+    color: #c71585;
+  }
+  
+  .tour-tropical {
+    background-color: #fff1e0; /* світло-помаранчевий */
+  }
+  
+  .tour-tropical h3 {
+    color: #e67300;
+  }
+  
+  .tour-moss {
+    background-color: #e1f0e1; /* світло-зелений */
+  }
+  
+  .tour-moss h3 {
+    color: #2b5f2b;
+  }
+  
+  .tour-sunset {
+    background-color: #fff9dc; /* світло-жовтий */
+  }
+  
+  .tour-sunset h3 {
+    color: #c99900;
+  }
+  
+  /* === Футер === */
+  footer {
+    background-color: #3a7f49;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 14px;
+  }
+  
+  /* === Адаптивність === */
+  @media (max-width: 768px) {
+    .tour-block {
+      flex-direction: column;
+    }
+  
+    .tour-block img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .tour-content {
+      padding: 20px;
+    }
+  }
+  

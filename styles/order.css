@@ -1,0 +1,150 @@
+/* === Загальні стилі === */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5fdf5;
+    color: #333;
+  }
+  
+  h2 {
+    font-family: 'Harlow Solid Italic', cursive;
+    text-align: center;
+    font-size: 32px;
+    margin: 40px 0 20px;
+    color: #2e6f3e;
+  }
+  
+  h3 {
+    font-size: 20px;
+    color: #2e6f3e;
+    margin-bottom: 15px;
+  }
+  
+  /* === Хедер === */
+  header {
+    background-color: #3a7f49;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .logo-title .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* === Основна секція === */
+  .order-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* === Блоки замовлення === */
+  .order-block {
+    background-color: #e9f8eb;
+    border-radius: 16px;
+    padding: 25px 30px;
+    margin: 30px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  .order-block:nth-of-type(2) {
+    background-color: #fff2f6;
+  }
+  
+  .order-block:nth-of-type(3) {
+    background-color: #f0faff;
+  }
+  
+  /* === Кнопки вибору === */
+  .option-buttons button {
+    background-color: #66b77d;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 0 10px 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .option-buttons button:hover {
+    background-color: #2e6f3e;
+  }
+  
+  /* === Квіти === */
+  .flower-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .flower-icons label {
+    background-color: #fdfdfd;
+    padding: 10px 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .flower-icons input {
+    margin-right: 6px;
+  }
+  
+  /* === Форма доставки === */
+  .delivery-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .delivery-form input,
+  .delivery-form textarea {
+    padding: 12px 16px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+  }
+  
+  .delivery-form button {
+    background-color: #66b77d;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: fit-content;
+    align-self: center;
+    margin-top: 10px;
+  }
+  
+  .delivery-form button:hover {
+    background-color: #2e6f3e;
+  }
+  
+  /* === Футер === */
+  footer {
+    background-color: #3a7f49;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 14px;
+  }
+  

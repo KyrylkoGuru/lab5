@@ -1,0 +1,418 @@
+/* === Загальні стилі === */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5fdf5;
+    color: #333;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #2e6f3e;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Harlow Solid Italic', cursive;
+  }
+  
+  /* === Хедер === */
+  header {
+    background-color: #3a7f49;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .logo-title .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+    margin-top: 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* === Блок "Букет" та "Екскурсія" === */
+  .highlight-section {
+    display: flex;
+    gap: 40px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #eaf8ec;
+    border-radius: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .highlight-section img {
+    max-width: 420px;
+    max-height: 350px;
+    border-radius: 15px;
+    object-fit: cover;
+    flex: 1 1 300px;
+  }
+  
+  .highlight-content {
+    flex: 2 1 500px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .highlight-content h2 {
+    font-size: 30px;
+    color: #2e6f3e;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Harlow Solid Italic', cursive;
+  }
+  
+  .highlight-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .highlight-content button {
+    background-color: #66b77d;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  .highlight-content button:hover {
+    background-color: #2e6f3e;
+  }
+  
+  .excursion-section .highlight-content p {
+    margin-left: 270px;
+    margin-right: 20px;
+    text-align: left;
+  }
+  
+  .excursion-section {
+    min-height: 480px;
+  }
+  
+  .excursion-section .highlight-content button {
+    margin-left: 520px;
+  }
+  
+  /* === Галерея з "розкиданими" зображеннями === */
+  .mini-gallery {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    height: 320px;
+    pointer-events: none;
+  }
+  
+  .mini-gallery img {
+    position: absolute;
+    width: 220px;
+    height: auto;
+    border-radius: 14px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, z-index 0.3s;
+    pointer-events: auto;
+  }
+  
+  .mini-gallery img:hover {
+    transform: scale(1.05);
+    z-index: 5;
+  }
+  
+  .mini-gallery img:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+  
+  .mini-gallery img:nth-child(2) {
+    top: 120px;
+    left: 80px;
+  }
+  
+  .mini-gallery img:nth-child(3) {
+    top: 130px;
+    right: 10px;
+  }
+  
+  /* === Книга рослин === */
+  .plant-book {
+    background-color: rgba(58, 127, 73, 0.2);
+    padding: 60px;
+    border-radius: 20px;
+    margin: 80px auto;
+    max-width: 1000px;
+  }
+  
+  .plant-book-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .plant-book-image {
+    width: 250px;
+    height: auto;
+    border-radius: 14px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  .plant-book-content {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .plant-book h2 {
+    color: #2e6f3e;
+    font-size: 32px;
+    font-family: 'Harlow Solid Italic', cursive;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .plant-book p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .plant-book .btn {
+    background-color: #b5d6c3;
+    color: #333;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .plant-book .btn:hover {
+    background-color: #9ec5b0;
+  }
+  
+  
+  /* === Новини === */
+  .news-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: 60px 0;
+  }
+  
+  .news-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .news-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .news-item h3 {
+    color: #2e6f3e;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* === FAQ === */
+  .faq-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  .faq-section h2 {
+    font-family: 'Harlow Solid Italic', cursive;
+  }
+  
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .faq-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-item h3 {
+    margin-top: 0;
+    color: #2e6f3e;
+  }
+  
+  /* === Відгуки === */
+  .reviews-section {
+    padding: 50px 20px;
+    background-color: #f0faff;
+    border-top: 1px solid #cce7ee;
+    border-bottom: 1px solid #cce7ee;
+  }
+  
+  .reviews-section h2 {
+    font-family: 'Harlow Solid Italic', cursive;
+  }
+  
+  .review-card {
+    background-color: #dff3ff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .review-avatar {
+    width: 60px;
+    height: 60px;
+    background-color: #bbb;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .review-avatar img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+  }  
+  
+  .review-content {
+    flex-grow: 1;
+  }
+  
+  .review-content h4 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    color: #2e6f3e;
+  }
+  
+  .review-content p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .review-form {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .review-form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .review-form button {
+    background-color: #66b77d;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .review-form button:hover {
+    background-color: #2e6f3e;
+  }
+  
+  /* === Про нас === */
+  .about-section {
+    background-color: #dbeed5;
+    padding: 50px 30px;
+    border-radius: 20px;
+    max-width: 1100px;
+    margin: 60px auto;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-family: 'Harlow Solid Italic', cursive;
+  }
+  
+  .about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+  }
+  
+  /* === Футер === */
+  footer {
+    background-color: #3a7f49;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }

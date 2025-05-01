@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформити замовлення | Andromeda Garden</title>
+  <link rel="stylesheet" href="styles/order.css">
+</head>
+<body>
+  <!-- ХЕДЕР -->
+  <header>
+    <div class="logo-title">
+      <img src="images/logo.png" alt="Andromeda Logo" class="logo">
+      <h1>Andromeda Garden</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="order-section">
+      <h2>Оформлення замовлення</h2>
+
+      <!-- Розмір букету -->
+      <div class="order-block">
+        <h3>Оберіть розмір букету:</h3>
+        <div class="option-buttons">
+          <button>Малий — 200 грн</button>
+          <button>Середній — 350 грн</button>
+          <button>Великий — 500 грн</button>
+        </div>
+      </div>
+
+      <!-- Наповнення -->
+      <div class="order-block">
+        <h3>Оберіть квіти:</h3>
+        <p class="note">До двох варіантів входить у вартість. Кожен додатковий — +50 грн.</p>
+        <div class="flower-icons">
+          <label><input type="checkbox"> Троянди</label>
+          <label><input type="checkbox"> Тюльпани</label>
+          <label><input type="checkbox"> Гербери</label>
+          <label><input type="checkbox"> Орхідеї</label>
+          <label><input type="checkbox"> Півонії</label>
+          <label><input type="checkbox"> Ромашки</label>
+          <label><input type="checkbox"> Дзвіночки</label>
+          <label><input type="checkbox"> Жоржини</label>
+          <label><input type="checkbox"> Стокротки</label>
+          <label><input type="checkbox"> Чорнобривці</label>
+          <label><input type="checkbox"> Нагідки</label>
+          <label><input type="checkbox"> Лілії</label>
+          <label><input type="checkbox"> Гіацинти</label>
+        </div>
+      </div>
+
+      <!-- Інформація для доставки -->
+      <div class="order-block">
+        <h3>Доставка:</h3>
+        <form class="delivery-form">
+          <input type="text" placeholder="Місто" required>
+          <input type="text" placeholder="Вулиця, будинок, квартира" required>
+          <input type="tel" placeholder="Номер телефону" required>
+          <textarea placeholder="Додаткові побажання"></textarea>
+          <button type="submit">Оплатити і замовити</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Andromeda Garden. Усі права захищені.</p>
+  </footer>
+</body>
+</html>

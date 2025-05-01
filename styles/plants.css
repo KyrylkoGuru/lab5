@@ -1,0 +1,81 @@
+/* === Загальні стилі === */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5fdf5;
+    color: #333;
+  }
+  
+  h1 {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    margin: 0;
+  }
+  
+  h2 {
+    font-family: 'Harlow Solid Italic', cursive;
+    font-size: 26px;
+    color: #2e6f3e;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #2e6f3e;
+  }
+  
+  /* === Хедер === */
+  header {
+    background-color: #3a7f49;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  /* === Блок з рослиною === */
+  .plant-list {
+    padding: 40px 20px;
+  }
+  
+  .plant-card {
+    display: flex;
+    background-color: #e8f8ec;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 1000px;
+    align-items: stretch;
+  }
+  
+  .plant-card img {
+    width: 280px;
+    height: auto;
+    object-fit: cover;
+    border-right: 4px solid #c2e2c6;
+  }
+  
+  .plant-info {
+    padding: 25px 30px;
+    flex-grow: 1;
+  }
+  
+  .plant-info p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .plant-info ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .plant-info li {
+    margin-bottom: 6px;
+  }
+  

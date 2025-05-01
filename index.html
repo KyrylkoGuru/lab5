@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andromeda Garden</title>
+  
+    <!-- Основні стилі -->
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  
+<body>
+
+  <!-- ХЕДЕР -->
+  <header>
+    <div class="logo-title">
+      <img src="images/logo.png" alt="Andromeda Logo" class="logo">
+      <h1>Andromeda Garden</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">Про нас</a></li>
+        <li><a href="#reviews">Відгуки</a></li>
+        <li><a href="#news">Новини</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ЗАМОВЛЕННЯ -->
+    <section class="highlight-section">
+        <img src="images/flowers.png" alt="Букет квітів">
+        <div class="highlight-content">
+          <h2>Замовити букет</h2>
+          <p>Жодне свято, подія чи просто приємний момент не обходиться без квітів. Ми створимо для вас унікальний букет, враховуючи стиль, подію та навіть настрій. Подаруйте радість тим, кого цінуєте.</p>
+          <button onclick="location.href='order.html'">Оформити замовлення</button>
+          </div>
+        </div>
+      </section>
+      <!-- ЕКСКУРСІЇ -->
+      
+        <section class="highlight-section reverse excursion-section">
+        <div class="highlight-content">
+          <h2>Записатися на екскурсію</h2>
+          <p>Наші гіди допоможуть вам поринути в ботанічний світ із десятками видів рослин, чарівними ландшафтами та атмосферою спокою. Запишіться на віртуальну або фізичну екскурсію вже зараз!</p>
+          <button onclick="location.href='tour.html'">Записатися</button>
+
+          <div class="mini-gallery">
+            <img src="images/tour1.png" alt="">
+            <img src="images/tour2.png" alt="">
+            <img src="images/tour3.png" alt="">
+          </div>
+        </div>
+      </section>
+      
+
+<!-- КНИГА РОСЛИН -->
+<section class="plant-book">
+    <div class="plant-book-container">
+      <img src="images/plantbook.png" alt="Книга рослин" class="plant-book-image">
+      <div class="plant-book-content">
+        <h2>Книга рослин</h2>
+        <p>Наша енциклопедія включає понад 100 видів рослин із унікальними описами, корисними властивостями та цікавими фактами. Пізнавайте зелений світ разом з нами.</p>
+        <a href="plants.html" class="btn">Відкрити книгу</a>
+      </div>
+    </div>
+  </section>
+
+    <!-- НОВИНИ -->
+    <section id="news" class="news-section">
+      <h2>Останні новини</h2>
+      <div class="news-container">
+        <div class="news-item">
+          <img src="images/news1.png" alt="Новина 1">
+          <h3>Весняна виставка фіалок</h3>
+          <p>З 10 по 20 квітня у нашому саду відбудеться виставка рідкісних фіалок.</p>
+        </div>
+        <div class="news-item">
+          <img src="images/news2.png" alt="Новина 2">
+          <h3>Нові рослини у колекції</h3>
+          <p>Ми додали понад 20 екзотичних рослин у тропічний павільйон.</p>
+        </div>
+      </div>
+    </section>
+
+<!-- FAQ -->
+<section class="faq-section">
+    <h2>Поширені запитання</h2>
+    <div class="faq-item">
+      <h3>Які години роботи саду?</h3>
+      <p>Щодня з 9:00 до 19:00</p>
+    </div>
+    <div class="faq-item">
+      <h3>Чи можна прийти з дітьми?</h3>
+      <p>Так, у нас діє сімейний тариф та дитячі зони.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Чи працює кафе на території?</h3>
+      <p>Так, на території є кафе з напоями та закусками.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Чи можна організувати фотосесію?</h3>
+      <p>Так, але потрібно попередньо погодити дату з адміністрацією.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Чи є парковка?</h3>
+      <p>Так, безкоштовна стоянка поруч із входом у сад.</p>
+    </div>
+  </section>
+
+<!-- ВІДГУКИ -->
+<section id="reviews" class="reviews-section">
+    <h2>Відгуки відвідувачів</h2>
+  
+    <div class="review-card">
+      <div class="review-avatar"><img src="images/avatar1.png" alt="Avatar 1"></div>
+      <div class="review-content">
+        <h4>Ірина</h4>
+        <p>Неймовірно красиве місце. Ми з родиною неначе потрапили у казку!</p>
+      </div>
+    </div>
+  
+    <div class="review-card">
+      <div class="review-avatar"><img src="images/avatar2.png" alt="Avatar 2"></div>
+      <div class="review-content">
+        <h4>Олександр</h4>
+        <p>Дуже сподобалась екскурсія. Гід професійний виконував роботу і доброзичливо ставився до туристів.</p>
+      </div>
+    </div>
+  
+    <div class="review-card">
+      <div class="review-avatar"><img src="images/avatar3.png" alt="Avatar 3"></div>
+      <div class="review-content">
+        <h4>Марія</h4>
+        <p>Дякую за чудову атмосферу та квіти – все дуже стильно й душевно!</p>
+      </div>
+    </div>
+  
+    <form class="review-form">
+      <label for="review-text">Залиште свій відгук:</label><br>
+      <textarea id="review-text" rows="4" placeholder="Ваш відгук..."></textarea><br>
+      <button type="submit">Надіслати</button>
+    </form>
+  </section>
+
+  <!-- ПРО НАС -->
+<section id="about" class="about-section">
+    <h2>Про нас</h2>
+    <p>Andromeda Garden — це не просто ботанічний сад. Це місце, де природа зустрічається з натхненням. Ми створили простір, який дарує спокій, естетику та цікаві знання про рослинний світ. У нас можна не лише милуватися унікальними видами квітів та дерев, а й дізнатися багато нового під час екскурсій та майстер-класів.</p>
+    <p>Наша команда дбає про кожну рослину та кожного відвідувача. Ми прагнемо зробити світ трохи зеленішим і щасливішим. Завітайте до нас і переконайтеся самі!</p>
+  </section>  
+
+  </main>
+
+  <!-- ФУТЕР -->
+  <footer>
+    <p>&copy; 2025 Andromeda Garden. Усі права захищені.</p>
+    <div class="contact-info">
+      <p>Телефон: +38 (099) 123-45-67</p>
+      <p>Email: info@andromedagarden.ua</p>
+      <p>Instagram: @andromeda_garden</p>
+    </div>
+  </footer>
+
+</body>
+</html>
