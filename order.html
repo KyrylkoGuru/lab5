@@ -4,9 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Оформити замовлення | Andromeda Garden</title>
+
+  <!-- Підключення Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Ваші стилі -->
   <link rel="stylesheet" href="styles/order.css">
 </head>
 <body>
+
   <!-- ХЕДЕР -->
   <header>
     <div class="logo-title">
@@ -22,18 +28,18 @@
       <!-- Розмір букету -->
       <div class="order-block">
         <h3>Оберіть розмір букету:</h3>
-        <div class="option-buttons">
-          <button>Малий — 200 грн</button>
-          <button>Середній — 350 грн</button>
-          <button>Великий — 500 грн</button>
+        <div class="option-buttons d-flex flex-wrap gap-3">
+          <button class="btn btn-outline-success">Малий — 200 грн</button>
+          <button class="btn btn-outline-success">Середній — 350 грн</button>
+          <button class="btn btn-outline-success">Великий — 500 грн</button>
         </div>
       </div>
 
       <!-- Наповнення -->
       <div class="order-block">
         <h3>Оберіть квіти:</h3>
-        <p class="note">До двох варіантів входить у вартість. Кожен додатковий — +50 грн.</p>
-        <div class="flower-icons">
+        <p class="note text-muted">До двох варіантів входить у вартість. Кожен додатковий — +50 грн.</p>
+        <div class="flower-icons d-flex flex-wrap gap-3">
           <label><input type="checkbox"> Троянди</label>
           <label><input type="checkbox"> Тюльпани</label>
           <label><input type="checkbox"> Гербери</label>
@@ -54,18 +60,27 @@
       <div class="order-block">
         <h3>Доставка:</h3>
         <form class="delivery-form">
-          <input type="text" placeholder="Місто" required>
-          <input type="text" placeholder="Вулиця, будинок, квартира" required>
-          <input type="tel" placeholder="Номер телефону" required>
-          <textarea placeholder="Додаткові побажання"></textarea>
-          <button type="submit">Оплатити і замовити</button>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Місто" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Вулиця, будинок, квартира" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="Номер телефону" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="3" placeholder="Додаткові побажання"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Оплатити і замовити</button>
         </form>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="text-center mt-5 py-3 bg-light">
     <p>&copy; 2025 Andromeda Garden. Усі права захищені.</p>
   </footer>
+
 </body>
 </html>
